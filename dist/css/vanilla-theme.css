@@ -1,0 +1,31 @@
+/*
+ * Vanilla color theme for Bubbly-Tap website.
+ * Colors you can watch by this link https://coolors.co/app/fffff0-b5b2ab-99cc99-636b9e-bf4e30
+ * 1 - background color
+ * 2 - disable color
+ * 3 - text color
+ * 4 - links color
+ * 5 - alerts color
+ **/
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    background-color: #fffff0;
+    color: #99cc99;
+}
+
+a{
+    color: #636b9e;
+}
+
+.disable{
+    color: #b5b2ab !important;
+    text-decoration: none;
+}
+
+.alert{
+    color: #bf4e30 !important;
+}
