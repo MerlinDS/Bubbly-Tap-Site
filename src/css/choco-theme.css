@@ -1,6 +1,6 @@
 /*
- * Vanilla color theme for Bubbly-Tap website.
- * Colors you can watch by this link https://coolors.co/app/fffff0-b5b2ab-99cc99-636b9e-bf4e30
+ * Choco color theme for Bubbly-Tap website.
+ * Colors you can watch by this link https://coolors.co/app/1e1e24-695958-e2bea3-7097af-e54b5b
  * 1 - background color
  * 2 - disable color
  * 3 - text color
@@ -13,8 +13,8 @@
    ========================================================================== */
 
 html {
-    background-color: #fffff0;
-    color: #99cc99;
+    background-color: #1e1e24;
+    color: #e2bea3;
 }
 
 /**
@@ -22,51 +22,51 @@ html {
 */
 
 .basic_bg{
-    background: #99cc99;
-    color: #fffff0;
+    background: #e2bea3;
+    color: #1e1e24;
 }
 
 .basic_border{
-    border-color: #99cc99 !important;
+    border-color: #e2bea3 !important;
 }
 /*
 * Secondary color
 */
 
 .secondary_text{
-    color: #636b9e;
+    color: #7097af;
 }
 
 .secondary_bg{
-    background: #636b9e;
-    color: #fffff0;
+    background: #7097af;
+    color: #1e1e24;
 }
 
 .secondary_border
 {
-    border-color: #636b9e !important;
+    border-color: #7097af !important;
 }
 
 /**
 * Disable color
 */
 .disable{
-    color: #b5b2ab;
+    color: #695958;
 }
 /*
 * Tertiary color
 */
 
 .tertiary_text{
-    color: #bf4e30;
+    color: #e54b5b;
 }
 
 .tertiary_bg{
-    background-color: #bf4e30;
+    background-color: #e54b5b;
 }
 
 .tertiary_border{
-    border-color: #bf4e30 !important;
+    border-color: #e54b5b !important;
 }
 
 /*
@@ -74,13 +74,13 @@ html {
 */
 
 #vanilla-theme{
-    background-color: #b5b2ab;
+    background-color: #fffff0;
 }
 
 #choco-theme{
-    background-color: #1e1e24;
+    background-color: #695958;
 }
 
 header span{
-    background-image: url("../img/icon.png");
+    background-image: url("../img/icon_dark.png");
 }

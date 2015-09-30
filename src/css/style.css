@@ -54,10 +54,14 @@ header h1{
     padding:0;
 }
 
-header img{
+header span{
+    width: 200px;
+    height: 200px;
+    border: 0;
     position: absolute;
     top: 0;
     left: 10%;
+    background-repeat: no-repeat;
 }
 
 article p{
@@ -113,6 +117,19 @@ article p{
     min-width: 320px;
     margin: 2%;
 }
+
+button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 1rem 1rem 2rem 1rem;
+    cursor:pointer;
+}
+
+button:focus {outline:0;}
+
 /* Fluid video setups **/
 .video-wrapper{
     position: absolute;
@@ -161,8 +178,11 @@ article p{
     h1{ font-size: 2.5em; }
     h2{ font-size: 1.6em;}
     h3{ padding: 0; margin: -5% 0 0 0; }
-    header img{
+    header span{
+        width: 200px;
+        height: 200px;
         position: inherit;
+        display: block;
         padding-top: 10%;
     }
     section{
