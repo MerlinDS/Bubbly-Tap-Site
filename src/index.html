@@ -107,6 +107,17 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script language="JavaScript">
+            var currentColorTheme = 'vanilla-theme';
+
+            function changeColorTheme(themeId){
+                if( currentColorTheme != themeId )
+                {
+                    document.getElementById('color-theme').setAttribute('href', 'css/' + themeId + '.css');
+                    currentColorTheme = themeId;
+                }
+            }
+        </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
