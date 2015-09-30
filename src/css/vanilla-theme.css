@@ -17,15 +17,54 @@ html {
     color: #99cc99;
 }
 
-a{
+/**
+* Basic color
+*/
+
+.basic_bg{
+    background: #99cc99;
+    color: #fffff0;
+}
+
+.basic_border{
+    border-color: #99cc99 !important;
+}
+/*
+* Secondary color
+*/
+
+.secondary_text{
     color: #636b9e;
 }
 
-.disable{
-    color: #b5b2ab !important;
-    text-decoration: none;
+.secondary_bg{
+    background: #636b9e;
+    color: #fffff0;
 }
 
-.alert{
-    color: #bf4e30 !important;
+.secondary_border
+{
+    border-color: #636b9e !important;
+}
+
+/**
+* Disable color
+*/
+.disable{
+    color: #b5b2ab;
+}
+/*
+* Tertiary color
+*/
+
+.tertiary_text{
+    color: #bf4e30;
+}
+
+.tertiary_bg{
+    background-color: #bf4e30;
+}
+
+.tertiary_border{
+    border-color: #bf4e30 !important;
 }

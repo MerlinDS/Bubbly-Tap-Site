@@ -33,11 +33,93 @@ hr{
     margin: 2em;
 }
 
+header ul{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 1em 0;
+}
+
+header ul li {
+    list-style: none;
+    display: inline-block;
+}
+header h2{
+    margin:0;
+    padding:0;
+}
+
+header h1{
+    margin:1rem 0 0 0;
+    padding:0;
+}
+
+header img{
+    position: absolute;
+    top: 0;
+    left: 10%;
+}
+
+article p{
+    padding: 5%;
+}
+/*
+* Circles
+*/
+.circle{
+    position: relative;
+    width:100%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding-top: 100%;
+}
+
+.dashed_circle{
+    width:50%;
+
+    min-width: 280px;
+    height: auto;
+    border: dashed 6px;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.in_circle{
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    right: 1em;
+    bottom: 1em;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content_holder {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.content_holder li {
+    list-style: none;
+    display: inline-block;
+    width: 40%;
+
+    min-width: 320px;
+    margin: 2%;
+}
 /* Fluid video setups **/
 .video-wrapper{
-    width: 80%;
-    margin: 0 auto;
-    padding: 2em;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    right: 10%;
+    bottom: 25%;
 }
 
 .iframe-container {
@@ -57,17 +139,42 @@ hr{
 
 /* Lists */
 .pagination {
-    margin: 0;
+    margin: -5% 0 0 0;
     padding: 0;
 }
 
 .pagination li {
     list-style: none;
-    display: inline-block;
-    margin: 0 2em 0 2em;
+    display: initial;
+    font-size: 3em;
+    margin: 0;
+    padding: 0 1rem 0 1rem;
 }
 
 .other_projects
 {
     font-size: 1.5em;
+}
+
+@media only screen and (max-width: 500px) {
+
+    h1{ font-size: 2.5em; }
+    h2{ font-size: 1.6em;}
+    h3{ padding: 0; margin: -5% 0 0 0; }
+    header img{
+        position: inherit;
+        padding-top: 10%;
+    }
+    section{
+        width: 100%;
+    }
+    .content_holder li {
+        margin: 1em 0 0 0;
+    }
+
+    .pagination {
+        margin: -10% 0 0 0;
+        padding: 0;
+    }
+
 }

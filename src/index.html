@@ -12,7 +12,8 @@
         <!--Font loading -->
         <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
         <!-- Styles-->
-        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/normalize.css"/>
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/vanilla-theme.css"/>
         <link rel="stylesheet" href="css/style.css"/>
@@ -26,45 +27,75 @@
 
         <!-- Site content here -->
         <header>
-            <h1>Bubbly Tap Game</h1>
-            <h2>Minimalistic puzzle game</h2>
+            <ul>
+                <li><img src="img/icon.png"></li>
+                <li>
+                    <h1>Bubbly Tap</h1>
+                    <h2>Minimalistic puzzle game</h2>
+                </li>
+            </ul>
         </header>
         <section>
             <!-- Video block -->
-            <div class="video-wrapper">
-                <div class="responsive-width iframe-container">
-                    <iframe id="video-content" src="https://www.youtube.com/embed/JKaJZ0I_A4Y?rel=0" allowfullscreen></iframe>
+            <div class="dashed_circle secondary_border">
+                <div class="circle secondary_bg">
+                    <div class="video-wrapper">
+                        <div class="responsive-width iframe-container">
+                            <iframe id="video-content" src="https://www.youtube.com/embed/raqs_-6ayoE?rel=0" allowfullscreen></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- End of video block -->
-            <article>
-                <p>
-                    This is simple and relaxing game with minimalistic style.
-                    Over 100 levels, different bubbles behavior, two color themes.
-                    No pressure, no hurry, no time limits.
-                    Just tap on screen solving puzzles.
-                </p>
-                <p>
-                    "Bubbly Tap" is in active develop, but in few weeks game will be released on several platforms:
-                </p>
-                <span class="alert">Web, Android and iOS</span>
-            </article>
+            <div>
+                <!--second circle-->
+                <ul class="content_holder">
+                    <li>
+                        <div class="circle basic_bg">
+                            <div class="in_circle">
+                                <article>
+                                    <p>
+                                        This is simple and relaxing game with minimalistic style.
+                                        Over 100 levels, different bubbles behavior, two color themes.
+                                        No pressure, no hurry, no time limits.
+                                        Just tap on screen solving puzzles.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </li>
 
-            <h3><a href="press-kit/">Press Kit</a></h3>
+                    <li>
+                            <div class="circle basic_bg">
+                                <div class="in_circle">
+                                    <article>
+                                        <p>
+                                            "Bubbly Tap" is in active develop, but in few weeks game will be released on several platforms:
+                                        </p>
+                                        <ul class="pagination">
+                                            <li><a href="#comming_soon"><i class="fa fa-globe tertiary_text"></i></a></li>
+                                            <li><a href="#comming_soon"><i class="fa fa-android tertiary_text"></i></a></li>
+                                            <li><a href="#comming_soon"><i class="fa fa-apple tertiary_text"></i></a></li>
+                                        </ul>
+                                        <h3><a class="secondary_text" href="press-kit/">Press Kit</a></h3>
+                                    </article>
+                                </div>
+                            </div>
+                    </li>
+                </ul>
+
+            </div>
+
+
             <p>
                 If you have some questions, feel free write to me directly:
-                <a href="mailto:merlinkolv.bubbly-tap@gmail.com">merlinkolv@gmail.com</a>
+                <a href="mailto:merlinkolv.bubbly-tap@gmail.com" class="secondary_text">merlinkolv@gmail.com</a>
             </p>
         </section>
         <hr />
         <footer>
-            <ul class="pagination">
-                <li><h4>Developer</h4><a href="http://merlinds.com">Andrew Salomatin (MerlinDS)</a></li>
-                <li><h4>Music by</h4><a href="https://soundcloud.com/vierarmig">Ilya Volkov (Vierarmig)</a></li>
-
-            </ul>
             <p class="other_projects">
-                Other projects: <a href="http://loonyquack.com">Loony Quack</a>
+                Other projects: <a class="secondary_text" target="_blank" href="http://loonyquack.com">Loony Quack</a>
             </p>
         </footer>
         <!-- And of site content -->
