@@ -17,9 +17,8 @@ body{
 /* set main containers layout */
 header, footer, section{
     margin: 0 auto;
-    width: 80%;
-    max-width: 60em;
     text-align: center;
+    max-width: 62em;
 }
 
 h1, h2, h3{
@@ -33,35 +32,25 @@ hr{
     margin: 2em;
 }
 
+header h1, h2{
+    margin:0;
+    padding:0;
+}
+
 header ul{
-    position: relative;
     width: 100%;
     margin: 0 auto;
-    padding: 0 0 1em 0;
+    padding: 0 0 0 0;
 }
 
 header ul li {
     list-style: none;
     display: inline-block;
 }
-header h2{
-    margin:0;
-    padding:0;
-}
 
-header h1{
-    margin:1rem 0 0 0;
-    padding:0;
-}
-
-header span{
+header ul li div{
     width: 200px;
     height: 200px;
-    border: 0;
-    position: absolute;
-    top: 0;
-    left: 10%;
-    background-repeat: no-repeat;
 }
 
 article p{
@@ -119,13 +108,16 @@ article p{
 }
 
 button{
-    width: 30px;
-    height: 30px;
+    /*width: 30px;*/
+    /*height: 30px;*/
     border: none;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 1rem 1rem 2rem 1rem;
+    border-radius: 20px;
+    padding: 1rem 3rem 1rem 3rem;
+    margin: 1rem;
     cursor:pointer;
+    font-family: Nunito, sans-serif !important;
+    text-transform: uppercase;
+    font-size: 1em;
 }
 
 button:focus {outline:0;}

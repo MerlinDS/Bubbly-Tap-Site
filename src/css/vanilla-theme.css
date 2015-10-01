@@ -73,14 +73,7 @@ html {
 * switchers
 */
 
-#vanilla-theme{
-    background-color: #b5b2ab;
-}
 
-#choco-theme{
-    background-color: #1e1e24;
-}
-
-header span{
+header ul li div{
     background-image: url("../img/icon.png");
 }

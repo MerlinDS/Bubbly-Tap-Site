@@ -73,14 +73,10 @@ html {
 * switchers
 */
 
-#vanilla-theme{
+#switcher{
     background-color: #fffff0;
 }
 
-#choco-theme{
-    background-color: #695958;
-}
-
-header span{
+header img{
     background-image: url("../img/icon_dark.png");
 }

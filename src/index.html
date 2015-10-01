@@ -3,24 +3,25 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--open graph protocol -->
+        <title>Bubbly Tap Game</title>
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@merlinds">
         <meta name="twitter:creator" content="@merlinds">
         <meta property="og:site_name" content="Bubbly Tap"/>
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://bubbly-tap.merlinds.com" />
+        <meta name="description" content="Bubbly Tap is a simple and relaxing game.
+                                        Over 100 levels, different bubbles behavior, two color themes.
+                                        No pressure, no hurry, no time limits.
+                                        Just tap on screen solving puzzles.">
         <meta name="twitter:title" property="og:title" content="Bubbly Tap - Minimalistic puzzle game">
-        <meta name="twitter:description" property="og:description" content="Bubbly Tap is a simple and relaxing game with minimalistic style.
+        <meta name="twitter:description" property="og:description" content="Bubbly Tap is a simple and relaxing game.
                                         Over 100 levels, different bubbles behavior, two color themes.
                                         No pressure, no hurry, no time limits.
                                         Just tap on screen solving puzzles.">
         <meta name="twitter:image" property="og:image" content="http://bubbly-tap.merlinds.com/img/twitter_preview.png">
-        <!--end of open graph protocol -->
-
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- end of meta-->
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
         <!--Font loading -->
@@ -41,17 +42,9 @@
 
         <!-- Site content here -->
         <header>
-            <ul>
-                <li><span></span></li>
-                <li>
-                    <h1>Bubbly Tap</h1>
-                    <h2>Minimalistic puzzle game</h2>
-                </li>
-            </ul>
-            <div>
-                <button id="vanilla-theme" class="switcher" onclick=changeColorTheme('vanilla-theme')></button>
-                <button id="choco-theme" class="switcher" onclick=changeColorTheme('choco-theme')></button>
-            </div>
+                <h1>Bubbly Tap</h1>
+                <h2>Minimalistic puzzle game</h2>
+                <img src="img/icon.png">
         </header>
         <section>
             <!-- Video block -->
@@ -65,6 +58,7 @@
                 </div>
             </div>
             <!-- End of video block -->
+            <button id="themeSwitcher" class="basic_bg" onclick=changeColorTheme()>Choco theme</button>
             <div>
                 <!--second circle-->
                 <ul class="content_holder">
@@ -124,12 +118,10 @@
         <script language="JavaScript">
             var currentColorTheme = 'vanilla-theme';
 
-            function changeColorTheme(themeId){
-                if( currentColorTheme != themeId )
-                {
-                    document.getElementById('color-theme').setAttribute('href', 'css/' + themeId + '.css');
-                    currentColorTheme = themeId;
-                }
+            function changeColorTheme(){
+                currentColorTheme = currentColorTheme == 'choco-theme' ? 'vanilla-theme' : 'choco-theme';
+                $("#color-theme").attr('href', 'css/' + currentColorTheme + '.css');
+                $("#themeSwitcher").html(currentColorTheme == 'choco-theme' ? 'vanilla theme' : 'choco theme');
             }
         </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
