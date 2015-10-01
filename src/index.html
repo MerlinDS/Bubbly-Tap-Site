@@ -44,7 +44,7 @@
         <header>
                 <h1>Bubbly Tap</h1>
                 <h2>Minimalistic puzzle game</h2>
-                <img src="img/icon.png">
+                <img src="img/icon.png" id="logo">
         </header>
         <section>
             <!-- Video block -->
@@ -84,11 +84,9 @@
                                         <p>
                                             "Bubbly Tap" is in active develop, but in few weeks game will be released on several platforms:
                                         </p>
-                                        <ul class="pagination">
-                                            <li><a href="#comming_soon"><i class="fa fa-globe tertiary_text"></i></a></li>
-                                            <li><a href="#comming_soon"><i class="fa fa-android tertiary_text"></i></a></li>
-                                            <li><a href="#comming_soon"><i class="fa fa-apple tertiary_text"></i></a></li>
-                                        </ul>
+                                        <a href="#comming_soon" class="platform"><i class="fa fa-globe tertiary_text"></i></a>
+                                        <a href="#comming_soon" class="platform"><i class="fa fa-android tertiary_text"></i></a>
+                                        <a href="#comming_soon" class="platform"><i class="fa fa-apple tertiary_text"></i></a>
                                         <h3><a class="secondary_text" href="press-kit/">Press Kit</a></h3>
                                     </article>
                                 </div>
@@ -122,6 +120,7 @@
                 currentColorTheme = currentColorTheme == 'choco-theme' ? 'vanilla-theme' : 'choco-theme';
                 $("#color-theme").attr('href', 'css/' + currentColorTheme + '.css');
                 $("#themeSwitcher").html(currentColorTheme == 'choco-theme' ? 'vanilla theme' : 'choco theme');
+                $("#logo").attr('src', 'img/' + (currentColorTheme == 'choco-theme' ? 'icon_dark.png' : 'icon.png'));
             }
         </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

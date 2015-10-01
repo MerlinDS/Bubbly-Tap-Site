@@ -54,7 +54,14 @@ header ul li div{
 }
 
 article p{
-    padding: 5%;
+    padding: 0 5% 0 5%;
+    margin: 0;
+}
+
+article h3
+{
+    padding: 0;
+    margin: 0;
 }
 /*
 * Circles
@@ -66,30 +73,29 @@ article p{
     margin: 0 auto;
     border-radius: 50%;
     padding-top: 100%;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    resize: vertical;
 }
 
 .dashed_circle{
     width:50%;
-
     min-width: 280px;
     height: auto;
     border: dashed 6px;
     margin: 0 auto;
     border-radius: 50%;
+    border-collapse: separate;
     padding: 10px;
 }
 
 .in_circle{
     position: absolute;
-    top: 1em;
     left: 1em;
     right: 1em;
-    bottom: 1em;
-    margin: 0 auto;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .content_holder {
@@ -163,6 +169,11 @@ button:focus {outline:0;}
 .other_projects
 {
     font-size: 1.5em;
+}
+
+.platform{
+    font-size: 3rem;
+    margin: 2%;
 }
 
 @media only screen and (max-width: 500px) {
