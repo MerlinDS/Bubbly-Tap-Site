@@ -88,7 +88,7 @@
     <hr class="hidden_separator"/>
 
     <article>
-        <a class="download basic_bg" href="#">download presskit(~20kb).zip</a>
+        <a class="download basic_bg" href="arcives/bubbly-tap-presskit.zip" title="download presskit">download presskit(~20kb).zip</a>
         <section>
             <h2 class="secondary_text">Description</h2>
             <p>
@@ -119,9 +119,9 @@
         <section>
             <h2 class="secondary_text">Platforms:</h2>
             <ul>
-                <li><i class="fa fa-globe secondary_text"></i> <span>Web</span> - 1 October, 2015</li>
-                <li><i class="fa fa-android secondary_text"></i> <span>Android</span> - 1 November, 2015</li>
-                <li><i class="fa fa-apple secondary_text"></i> <span>iOS</span> - 1 November, 2015</li>
+                <li><i class="fa fa-globe secondary_text"></i> <span>Web</span> - <span class="tertiary_text">1 October, 2015</span></li>
+                <li><i class="fa fa-android secondary_text"></i> <span>Android</span> - <span class="tertiary_text">1 November, 2015</span></li>
+                <li><i class="fa fa-apple secondary_text"></i> <span>iOS</span> - <span class="tertiary_text">1  November, 2015</span></li>
             </ul>
         </section>
     </article>
@@ -132,35 +132,47 @@
         <figure>
             <figcaption itemprop="description" content="Bubbly Tap promo video" >
                 <span itemprop="name" content="Bubbly Tap">Bubbly Tap</span> promo video:
-                <a href="https://www.youtube.com/watch?v=raqs_-6ayoE" target="_blank">Youtube</a>
+                <a href="https://www.youtube.com/watch?v=raqs_-6ayoE"
+                   target="_blank" title="Bubbly Tap promo video on youtube">Youtube</a>
                 <span itemprop="uploadDate" content="02-10-2015" >(02-10-2015)</span>
             </figcaption>
-            <img src="http://img.youtube.com/vi/raqs_-6ayoE/hqdefault.jpg" itemprop="thumbnailUrl" content="http://img.youtube.com/vi/raqs_-6ayoE/hqdefault.jpg" alt="thumbnail" />
-            <iframe id="video-content" src="https://www.youtube.com/embed/raqs_-6ayoE?rel=0" allowfullscreen></iframe>
+            <div class="video-holder">
+                <img src="http://img.youtube.com/vi/raqs_-6ayoE/mqdefault.jpg"
+                     itemprop="thumbnailUrl" content="http://img.youtube.com/vi/raqs_-6ayoE/mqdefault.jpg" alt="thumbnail" />
+                <div class="video-wrapper">
+                    <div class="responsive-width iframe-container" itemscope itemtype="http://schema.org/VideoObject">
+                        <iframe id="video-content" src="https://www.youtube.com/embed/raqs_-6ayoE?rel=0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+
         </figure>
     </section>
     <hr/>
     <section class="images">
         <h2 class="secondary_text">Images</h2>
-        <a href=""><img src="img/twitter_preview.png"></a>
-        <a href=""><img src="img/twitter_preview.png"></a>
-        <a href=""><img src="img/twitter_preview.png"></a>
-        <a href=""><img src="img/twitter_preview.png"></a>
-        <a href=""><img src="img/twitter_preview.png"></a>
-        <a href=""><img src="img/twitter_preview.png"></a>
-        <a href=""><img src="img/twitter_preview.png"></a>
-        <a href=""><img src="img/twitter_preview.png"></a>
-        <a href=""><img src="img/twitter_preview.png"></a>
-        <a href=""><img src="img/twitter_preview.png"></a>
+        <a href="img/twitter_preview.png" title="Open In Full size" target="_blank"><img src="img/thumbnail_twitter_preview.png"></a>
+        <a href="img/twitter_preview.png" title="Open In Full size" target="_blank"><img src="img/thumbnail_twitter_preview.png"></a>
+        <a href="img/twitter_preview.png" title="Open In Full size" target="_blank"><img src="img/thumbnail_twitter_preview.png"></a>
+        <a href="img/twitter_preview.png" title="Open In Full size" target="_blank"><img src="img/thumbnail_twitter_preview.png"></a>
+        <a href="img/twitter_preview.png" title="Open In Full size" target="_blank"><img src="img/thumbnail_twitter_preview.png"></a>
+        <a href="img/twitter_preview.png" title="Open In Full size" target="_blank"><img src="img/thumbnail_twitter_preview.png"></a>
+        <a href="img/twitter_preview.png" title="Open In Full size" target="_blank"><img src="img/thumbnail_twitter_preview.png"></a>
+        <a href="img/twitter_preview.png" title="Open In Full size" target="_blank"><img src="img/thumbnail_twitter_preview.png"></a>
+        <a href="img/twitter_preview.png" title="Open In Full size" target="_blank"><img src="img/thumbnail_twitter_preview.png"></a>
+        <a href="img/twitter_preview.png" title="Open In Full size" target="_blank"><img src="img/thumbnail_twitter_preview.png"></a>
 
-        <a class="download basic_bg max_width" href="#">download screenshots as .zip (5MB)</a>
+        <a class="download basic_bg max_width" href="arcives/bubbly-tap-screenshots.zip" title="download screenshots">
+            download screenshots as .zip (5MB)</a>
     </section>
     <hr/>
     <section class="images">
         <h2 class="secondary_text">Logo & Icon</h2>
-        <a href="" class="logo"><img src="../img/icon.png"></a>
-        <a href="" class="logo"><img src="../img/icon_dark.png"></a>
-        <a class="download basic_bg max_width" href="#">download logo files as .zip (15KB)</a>
+        <a href="../img/icon.png" class="logo" title="Open In Full size" target="_blank"><img src="../img/icon.png"></a>
+        <a href="../img/icon_dark.png" class="logo" title="Open In Full size" target="_blank"><img src="../img/icon_dark.png"></a>
+        <a class="download basic_bg max_width" href="arcives/bubbly-tap-logo.zip" title="download logo files">
+            download logo files as .zip (15KB)</a>
     </section>
     <hr/>
     <section>
@@ -191,11 +203,8 @@
         </ul>
     </section>
 </section>
-<hr/>
 <footer>
-    <p class="other_projects">
-        Other projects: <a class="secondary_text" target="_blank" href="http://loonyquack.com" itemprop="sameAs" >Loony Quack</a>
-    </p>
+    <a class="download basic_bg" href="arcives/bubbly-tap-presskit.zip" title="download presskit">download presskit(~20kb).zip</a>
 </footer>
 <!-- And of site content -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/{{JQUERY_VERSION}}/jquery.min.js"></script>
