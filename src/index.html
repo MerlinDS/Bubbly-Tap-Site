@@ -35,23 +35,28 @@
         <!-- vendors -->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body>
+    <body itemscope itemtype="http://schema.org/VideoGame">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <!-- Site content here -->
         <header>
-                <h1>Bubbly Tap</h1>
-                <h2>Minimalistic puzzle game</h2>
-                <img src="img/icon.png" id="logo">
+                <h1 itemprop="name">Bubbly Tap</h1>
+                <h2 itemprop="genre">Minimalistic puzzle</h2>
+                <h3 itemprop="applicationCategory">mobile game</h3>
+                <img src="img/icon.png" id="logo" itemprop="image" alt="Bubbly Tap logo">
         </header>
         <section>
             <!-- Video block -->
             <div class="dashed_circle secondary_border">
                 <div class="circle secondary_bg">
                     <div class="video-wrapper">
-                        <div class="responsive-width iframe-container">
+                        <div class="responsive-width iframe-container" itemscope itemtype="http://schema.org/VideoObject">
+                            <span itemprop="name" content="Bubbly Tap">Bubbly Tap</span>
+                            <span itemprop="description" content="Bubbly Tap promo video" >Bubbly Tap promo video</span>
+                            <img src="http://img.youtube.com/vi/raqs_-6ayoE/hqdefault.jpg" itemprop="thumbnailUrl" content="http://img.youtube.com/vi/raqs_-6ayoE/hqdefault.jpg" alt="thumbnail" />
+                            <span itemprop="uploadDate" content="02-10-2015" >02-10-2015</span>
                             <iframe id="video-content" src="https://www.youtube.com/embed/raqs_-6ayoE?rel=0" allowfullscreen></iframe>
                         </div>
                     </div>
@@ -66,8 +71,8 @@
                         <div class="circle basic_bg">
                             <div class="in_circle">
                                 <article>
-                                    <p>
-                                        This is simple and relaxing game with minimalistic style.
+                                    <p itemprop="description">
+                                        Simple and relaxing game with minimalistic style.
                                         Over 100 levels, different bubbles behavior, two color themes.
                                         No pressure, no hurry, no time limits.
                                         Just tap on screen solving puzzles.
@@ -82,12 +87,24 @@
                                 <div class="in_circle">
                                     <article>
                                         <p>
-                                            "Bubbly Tap" is in active develop, but in few weeks game will be released on several platforms:
+                                            Bubbly Tap is in active develop, but in few weeks game will be released on several platforms:
                                         </p>
-                                        <a href="#comming_soon" class="platform"><i class="fa fa-globe tertiary_text"></i></a>
-                                        <a href="#comming_soon" class="platform"><i class="fa fa-android tertiary_text"></i></a>
-                                        <a href="#comming_soon" class="platform"><i class="fa fa-apple tertiary_text"></i></a>
+
+                                        <a href="#comming_soon" class="platform" itemprop="downloadUrl">
+                                            <i class="fa fa-globe tertiary_text"></i>
+                                            <span itemprop="operatingSystem" content="Browser">Browser</span>
+                                        </a>
+                                        <a href="#comming_soon" class="platform" itemprop="downloadUrl">
+                                            <i class="fa fa-android tertiary_text"></i>
+                                            <span itemprop="operatingSystem" content="Android">Android</span>
+                                        </a>
+
+                                        <a href="#comming_soon" class="platform" itemprop="downloadUrl">
+                                            <i class="fa fa-apple tertiary_text"></i>
+                                            <span itemprop="operatingSystem" content="iOS">iOS</span>
+                                        </a>
                                         <h3><a class="secondary_text" href="press-kit/">Press Kit</a></h3>
+
                                     </article>
                                 </div>
                             </div>
@@ -97,9 +114,9 @@
             </div>
 
 
-            <p>
+            <p itemscope itemtype="http://schema.org/Organization">
                 If you have some questions, feel free write to me directly:
-                <a href="mailto:merlinkolv@gmail.com" class="secondary_text">merlinkolv@gmail.com</a>
+                <a href="mailto:merlinkolv@gmail.com" class="secondary_text" itemprop="email">merlinkolv@gmail.com</a>
             </p>
         </section>
         <hr />
