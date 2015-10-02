@@ -47,7 +47,7 @@
         <h2 itemprop="genre">Minimalistic puzzle</h2>
         <h3 itemprop="applicationCategory">mobile game</h3>
     </hgroup>
-    <img src="../img/icon.png" id="logo" itemprop="image" alt="Bubbly Tap logo">
+    <img src="../img/icon.png" id="logo" alt="Bubbly Tap logo">
 </header>
 <section>
     <aside>
@@ -55,16 +55,17 @@
         <ul>
             <li>
                 <h4 class="secondary_text">Developer:</h4>
-                <p>Merlinds</p>
+                <p itemprop="author">Merlinds</p>
                 <p>Based in Kiev, Ukraine</p>
             </li>
             <li>
                 <h4 class="secondary_text">Website:</h4>
-                <a href="http://bubbly-tap.merlinds.com" target="_blank">http://bubbly-tap.merlinds.com</a>
+                <a href="http://bubbly-tap.merlinds.com" target="_blank" itemprop="url">
+                    http://bubbly-tap.merlinds.com</a>
             </li>
             <li>
                 <h4 class="secondary_text">Press / Business contact:</h4>
-                <a href="mailto:merlinkolv@gmail.com" class="secondary_text" itemprop="email">merlinkolv@gmail.com</a>
+                <a href="mailto:merlinkolv@gmail.com" class="secondary_text">merlinkolv@gmail.com</a>
             </li>
             <li>
                 <h4 class="secondary_text">Platforms:</h4>
@@ -90,7 +91,7 @@
     <article>
         <section>
             <h2 class="secondary_text">Description</h2>
-            <p>
+            <p itemprop="description">
                 Under construction
                 Bubbly tap is a simple and relaxing game with minimalistic style.
                 Over 100 levels, different bubbles behavior, two color themes, soft music.
@@ -118,9 +119,12 @@
         <section>
             <h2 class="secondary_text">Platforms:</h2>
             <ul>
-                <li><i class="fa fa-globe secondary_text"></i> <span>Web</span> - <span class="tertiary_text">1 October, 2015</span></li>
-                <li><i class="fa fa-android secondary_text"></i> <span>Android</span> - <span class="tertiary_text">1 November, 2015</span></li>
-                <li><i class="fa fa-apple secondary_text"></i> <span>iOS</span> - <span class="tertiary_text">1  November, 2015</span></li>
+                <li><i class="fa fa-globe secondary_text"></i> <span itemprop="operatingSystem" content="Browser">
+                    Browser</span> - <span class="tertiary_text">1 October, 2015</span></li>
+                <li><i class="fa fa-android secondary_text"></i> <span itemprop="operatingSystem" content="Android">
+                    Android</span> - <span class="tertiary_text">1 November, 2015</span></li>
+                <li><i class="fa fa-apple secondary_text"></i> <span itemprop="operatingSystem" content="iOS">
+                    iOS</span> - <span class="tertiary_text">1  November, 2015</span></li>
             </ul>
         </section>
     </article>
@@ -128,7 +132,7 @@
     <!--Media-->
     <section>
         <h2 class="secondary_text">Video</h2>
-        <figure>
+        <figure itemscope itemtype="http://schema.org/VideoObject">
             <figcaption itemprop="description" content="Bubbly Tap promo video" >
                 <span itemprop="name" content="Bubbly Tap">Bubbly Tap</span> promo video:
                 <a href="https://www.youtube.com/watch?v=raqs_-6ayoE"
@@ -139,7 +143,7 @@
                 <img src="http://img.youtube.com/vi/raqs_-6ayoE/mqdefault.jpg"
                      itemprop="thumbnailUrl" content="http://img.youtube.com/vi/raqs_-6ayoE/mqdefault.jpg" alt="thumbnail" />
                 <div class="video-wrapper">
-                    <div class="responsive-width iframe-container" itemscope itemtype="http://schema.org/VideoObject">
+                    <div class="responsive-width iframe-container">
                         <iframe id="video-content" src="https://www.youtube.com/embed/raqs_-6ayoE?rel=0" allowfullscreen></iframe>
                     </div>
                 </div>
@@ -151,7 +155,7 @@
     <hr/>
     <section class="images">
         <h2 class="secondary_text">Images</h2>
-        <a href="img/twitter_preview.png" title="Open In Full size" target="_blank"><img src="img/thumbnail_twitter_preview.png"></a>
+        <a href="img/twitter_preview.png" title="Open In Full size" target="_blank"><img itemprop="image" src="img/thumbnail_twitter_preview.png"></a>
         <a href="img/twitter_preview.png" title="Open In Full size" target="_blank"><img src="img/thumbnail_twitter_preview.png"></a>
         <a href="img/twitter_preview.png" title="Open In Full size" target="_blank"><img src="img/thumbnail_twitter_preview.png"></a>
         <a href="img/twitter_preview.png" title="Open In Full size" target="_blank"><img src="img/thumbnail_twitter_preview.png"></a>
@@ -174,7 +178,7 @@
             download logo files as .zip (15KB)</a>
     </section>
     <hr/>
-    <section>
+    <section  itemscope itemtype="http://schema.org/Organization">
         <h2 class="secondary_text">Team</h2>
         <p>
             Where are independent developers. Under construction
@@ -182,11 +186,16 @@
         <ul>
             <li>
                 <a href="http://merlinds.com" class="secondary_text" target="_blank">
-                    Andrew Salomatin (Merlinds)</a> - Game Design, Art, Programming
+                    <span itemprop="founder">Andrew Salomatin (Merlinds)</span></a> - Game Design, Art, Programming
+                <ul>
+                    <li><a href="mailto:merlinkolv@gmail.com" class="secondary_text" itemprop="email">merlinkolv@gmail.com</a></li>
+                    <li><a href="https://twitter.com/MerlinDs" class="secondary_text">twitter.com/MerlinDs</a></li>
+                </ul>
+
             </li>
             <li>
                 <a href="https://soundcloud.com/vierarmig" class="secondary_text"  target="_blank">
-                    Ilya Volkov (Viearmig)</a> - Music and Sound
+                    <span itemprop="member"> Ilya Volkov (Viearmig)</span></a> - Music and Sound
             </li>
         </ul>
         </p>
