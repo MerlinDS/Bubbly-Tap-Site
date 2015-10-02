@@ -1,0 +1,61 @@
+html {
+    font-family: Nunito, sans-serif !important;
+    font-size: 1.2em;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* set main containers layout */
+header, footer, section{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 52em;
+}
+section{
+    /*background-color: #0000FF;*/
+    text-align: justify;
+    width: 80%;
+}
+/**
+* Factsheet block
+*/
+aside{
+}
+
+aside ul, h2, h3, h4, p
+{
+    padding: 0;
+    margin: 0;
+}
+
+aside ul li
+{
+    list-style: none;
+    padding-top: 10px;
+    display: block;
+}
+/**
+* Main section block
+*/
+section article{
+}
+
+figcaption
+{
+    margin-bottom: 2%;
+}
+.clear_float{
+    clear:both;
+}
+
+/**
+Minimals
+**/
+@media only screen and (max-width: 1200px) {
+
+}
