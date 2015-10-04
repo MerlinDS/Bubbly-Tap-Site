@@ -112,7 +112,6 @@ article h3
     list-style: none;
     display: inline-block;
     width: 40%;
-
     min-width: 320px;
     margin: 2%;
 }
@@ -198,6 +197,47 @@ button:focus {outline:0;}
 .platform span{
     display: none;
 }
+#mc_embed_signup
+{
+    padding: 1em;
+    width: 80%;
+    margin: 0 auto;
+}
+.mc-field-group
+{
+    width: 100%;
+}
+
+.mc-field-group .email
+{
+    width: 70%;
+    font-size: 1.2em;
+    padding: 0.2em;
+    border-radius: 8px;
+    border: 1px solid;
+    margin-bottom: 1em;
+    display: inline-block;
+}
+
+.button
+{
+    width: 18%;
+    min-width: 200px;
+    font-size: 1.2em;
+    padding: 0.2em;
+    border-radius: 8px;
+    border: 1px solid;
+    margin-bottom: 1em;
+    display: inline-block;
+    font-family: Nunito, sans-serif;
+    text-transform: uppercase;
+}
+
+.mce-responses, .mce_inline_error
+{
+    width: 70%;
+    margin: 0 auto !important;
+}
 
 @media only screen and (max-width: 500px) {
 
@@ -221,6 +261,12 @@ button:focus {outline:0;}
     .pagination {
         margin: -10% 0 0 0;
         padding: 0;
+    }
+
+    #mc_embed_signup
+    {
+        padding: 0;
+        width: 100%;
     }
 
 }
